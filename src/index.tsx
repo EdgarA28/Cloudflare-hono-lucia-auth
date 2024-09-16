@@ -46,7 +46,6 @@ export function initializeLucia(D1: D1Database) {
     },
     getUserAttributes: (attributes) => {
       return {
-        // we don't need to expose the password hash!
         email: attributes.email,
         emailVerified: Boolean(attributes.email_verified),
        
