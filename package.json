@@ -1,0 +1,22 @@
+{
+  "name": "cloudflare-hono-lucia-auth",
+  "scripts": {
+    "dev": "wrangler dev src/index.tsx",
+    "deploy": "wrangler deploy --minify src/index.tsx"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.2.2",
+    "@lucia-auth/adapter-drizzle": "^1.1.0",
+    "@lucia-auth/adapter-sqlite": "^3.0.2",
+    "hono": "^4.5.11",
+    "lucia": "^3.2.0",
+    "oslo": "^1.2.1",
+    "resend": "^4.0.0",
+    "yod": "^1.0.0-alpha.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240529.0",
+    "wrangler": "^3.57.2"
+  }
+}
