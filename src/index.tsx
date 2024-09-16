@@ -237,7 +237,7 @@ app.post('/signup',
     } catch (err) {
       // db error, email taken, etc
       console.log(err)
-      return c.body("Something went wrong", 400)
+      return c.body("Something went wrong!!", 400)
 
     }
 })
